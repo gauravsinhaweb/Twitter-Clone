@@ -1,0 +1,59 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
+}
+.post__body > img {
+  border-radius: 20px;
+}
+.post__body {
+  flex: 1;
+  padding: 10px;
+}
+.post__headerText > h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.post__headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.post__footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.footerIcon:hover {
+  color: var(--twitter-color);
+  background-color: var(--twitter-background);
+  border-radius: 16px;
+}
+.retweetIcon:hover {
+  color: rgb(28, 228, 28);
+  background-color: var(--twitter-background);
+  border-radius: 16px;
+}
+.likeIcon:hover {
+  color: red;
+  background-color: var(--twitter-background);
+  border-radius: 16px;
+}
+.post__badge {
+  font-size: 13px !important;
+  color: var(--twitter-color);
+  padding: 0px 3px;
+}
+.post__headerUsername {
+  font-weight: 400;
+  font-size: 15px;
+  color: gray;
+}
+.post__avatar {
+  padding: 20px;
+}
+.post__SpiderVerse {
+  color: var(--twitter-color);
+}
