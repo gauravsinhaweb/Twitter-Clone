@@ -51,3 +51,6 @@
   margin-top: 0px !important;
   margin-left: 70px;
 }
+.image-upload > input {
+  display: none;
+}
