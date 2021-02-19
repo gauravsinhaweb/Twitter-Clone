@@ -11,28 +11,22 @@ function Post({ displayName, username, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://avatars.githubusercontent.com/u/75125943?s=400&u=211c424499aee235a8fd0532ca232c01a670b6e4&v=4" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              Gaurav Sinha
-              <GoVerified size={16} className="post__badge" />
-              <span className="post__headerUsername"> @gauravsinhaweb</span>
+              {displayName}
+              {verified && <GoVerified size={16} className="post__badge" />}
+              <span className="post__headerUsername"> @{username}</span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>
-              Spider-man would say “Happy Spunday!”
-              <span className="post__SpiderVerse">#spiderVerse</span>
-            </p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://media.giphy.com/media/UWnvhKHZNBSgRqVbhB/giphy.gif"
-          alt=""
-        />
+        <img src={image} alt="" />
         <div className="post__footer">
           <RiChat3Line size={20} className="footerIcon" />
           <AiOutlineRetweet size={20} className="retweetIcon" />
