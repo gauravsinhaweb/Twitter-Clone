@@ -52,6 +52,7 @@
   font-weight: 400;
   font-size: 15px;
   color: gray;
+  text-transform: lowercase;
 }
 .post__avatar {
   padding: 20px;
